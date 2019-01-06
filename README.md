@@ -30,4 +30,4 @@ Your completed calculator should:
 2. Write a function that will show the calculators recent history when you double click on the display component
 ## Submission
 
-Homework is due by **12:00 Tonight!**
+Homework is due by **12:00 Monday Night!**
