@@ -80,8 +80,10 @@ class Calculator extends Component {
     let secondNumber = this.state.secondNumber;
     let opreation = this.state.opreation;
 
-    firstNumber = firstNumber.join('');
-    secondNumber = secondNumber.join('');
+  
+    firstNumber = (parseFloat((firstNumber.join('')))).toFixed(2);
+    secondNumber = (parseFloat((secondNumber.join('')))).toFixed(2);
+
 
     
     firstNumber= parseFloat(firstNumber);
