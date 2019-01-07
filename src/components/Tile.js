@@ -4,11 +4,12 @@ const Tile = (props) => {
   const style = {
     width: props.size === 2 ? '200px' : ''
   }
-
+  // console.log(props);
   return (
     <div
       style={style}
       className='tile'
+      onClick={()=>{props.getInput(props.symbol)}}
     >
       <h5>
         {props.symbol}

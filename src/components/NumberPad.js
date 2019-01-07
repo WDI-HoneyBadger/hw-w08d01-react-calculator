@@ -7,7 +7,7 @@ class NumberPad extends Component {
   renderTiles() {
     return tileData.map((tile, i) => {
       return (
-        <Tile key={i} size={tile.size} symbol={tile.symbol} />
+            <Tile key={i} size={tile.size} symbol={tile.symbol} {...this.props}/>
       )
     });
   }
