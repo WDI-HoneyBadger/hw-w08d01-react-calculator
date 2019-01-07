@@ -5,10 +5,12 @@ const Tile = (props) => {
     width: props.size === 2 ? '200px' : ''
   }
 
+  // console.log(props)
   return (
     <div
       style={style}
       className='tile'
+      onClick={(() => props.calculator.fun(props))}
     >
       <h5>
         {props.symbol}
