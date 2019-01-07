@@ -4,7 +4,8 @@ const Display = (props) => {
   return (
     <div className="display">
       <h5 className="display_text">
-        3.14
+
+        {props.showResult}
       </h5>
     </div>
   );
