@@ -4,7 +4,7 @@ import Calculator from './Calculator';
 
 const App = (props) => {
   return (
-    <div>
+    <div className="">
       <h1> Space Calcs </h1>
       <Calculator />
     </div>

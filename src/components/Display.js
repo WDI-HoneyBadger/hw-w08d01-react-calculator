@@ -2,9 +2,13 @@ import React from 'react';
 
 const Display = (props) => {
   return (
-    <div className="display">
+    <div className="display"
+    value={props.displayNumbers()}
+    onChange={props.currentValue} 
+    > 
       <h5 className="display_text">
-        3.14
+      
+        {props.currentValue}
       </h5>
     </div>
   );
