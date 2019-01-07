@@ -48,7 +48,7 @@ h1 {
 .number_pad {
   max-width: 400px;
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap:wrap;
   outline: 2px solid black;
 }
 
