@@ -23,6 +23,7 @@ class Calculator extends Component {
       break;
     }while(symbol==='='){
       this.RenderScore();
+      break;
   
     }while(symbol === 'C'){
       this.setState({
