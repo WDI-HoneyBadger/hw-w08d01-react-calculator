@@ -4,6 +4,7 @@ const Tile = (props) => {
   const style = {
     width: props.size === 2 ? '200px' : ''
   }
+  
 
   return (
     <div
