@@ -11,7 +11,9 @@ const Tile = (props) => {
       className='tile'
     >
       <h5>
+
         {props.symbol}
+        
       </h5>
     </div>
   );
