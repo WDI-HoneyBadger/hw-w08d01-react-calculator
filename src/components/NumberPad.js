@@ -8,17 +8,21 @@ class NumberPad extends Component {
     return tileData.map((tile, i) => {
       return (
         <Tile key={i} size={tile.size} symbol={tile.symbol} />
+        <div key={i} onClick={() => {this.props.claculate(tile.symbol, tile.number)}} >
+          <Tile key={i} size={tile.size} symbol={tile.symbol} />
+        </div>
+        
       )
-    });
-  }
+        });
+      }
 
-  render() {
-    return (
-      <div className="number_pad">
-        {this.renderTiles()}
-      </div>
-    )
-  }
-}
-
+      render() {
+        return (
+          <div className="number_pad">
+            {this.renderTiles()}
+          </div>
+        )
+      }
+    }
+   
 export default NumberPad;
