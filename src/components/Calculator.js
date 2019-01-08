@@ -14,16 +14,17 @@ class Calculator extends Component {
     }
   }
   renderProcsess(symbol,number){
-    if(number === true || symbol ==='.'){
+    while(number === true || symbol ==='.'){
       const newN = this.state.oneElemnt.concat([symbol])
       this.setState({
         showNumber : newN ,
         oneElemnt : newN
       })
-    }else if(symbol==='='){
+      break;
+    }while(symbol==='='){
       this.RenderScore();
   
-    }else if(symbol === 'C'){
+    }while(symbol === 'C'){
       this.setState({
         showNumber :[],
         process :[],
@@ -31,16 +32,19 @@ class Calculator extends Component {
         towElemnt : []
   
       })
-    }else if (symbol !== 'C' && number === false && symbol !=='.'){
+      break;
+    }while (symbol !== 'C' && number === false && symbol !=='.'){
       this.setState({
         process: symbol
       })
-    }else if((number === true || symbol ==='.') && this.state.process !== ''){
+      break;
+    }while((number === true || symbol ==='.') && this.state.process !== ''){
       const NewNum = this.state.towElemnt.concat([symbol])
       this.setState({
         showNumber:NewNum,
         towElemnt : NewNum
       })
+      break;
     }
   }
   
